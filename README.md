@@ -9,6 +9,8 @@
 #### use:
 
 * fastify https://www.fastify.io/
+* dotenv https://www.npmjs.com/package/dotenv
+* zod https://www.npmjs.com/package/zod
 
 #### database
 * knex https://knexjs.org/
