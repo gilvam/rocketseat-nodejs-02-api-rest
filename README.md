@@ -8,6 +8,14 @@
 
 #### use:
 
-fastify https://www.fastify.io/
+* fastify https://www.fastify.io/
+
+#### database
+* knex https://knexjs.org/
+* sqlite3
 
 ---
+
+# knex
+#### example to use:
+``npm run knex -- migrate:make _NAME_``
