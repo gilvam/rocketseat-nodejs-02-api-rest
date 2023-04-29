@@ -1,0 +1,20 @@
+{
+  "name": "rocketseat-nodejs-02-api-rest",
+  "version": "1.0.0",
+  "description": "### init projet `` npm run dev ``",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0"
+  }
+}
