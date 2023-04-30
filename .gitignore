@@ -46,6 +46,7 @@ Thumbs.db
 
 # db
 /db/app.db
+/db/test.db
 
 # configs
 #.env

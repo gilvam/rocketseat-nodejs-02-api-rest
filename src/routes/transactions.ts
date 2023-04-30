@@ -8,6 +8,10 @@ import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 const TABLE_NAME = 'transactions'
 
 export async function transactionRoutes(app: FastifyInstance) {
+	app.addHook('preHandler', async (request, reply) => {
+		// console.log(`[${request.method}]`, request.url)
+	})
+
 	app.get(
 		'/',
 		{ preHandler: [checkSessionIdExists] },
@@ -43,10 +47,12 @@ export async function transactionRoutes(app: FastifyInstance) {
 		{ preHandler: [checkSessionIdExists] },
 		async (request) => {
 			const { sessionId } = request.cookies
-			return knex(TABLE_NAME)
+			const response = await knex(TABLE_NAME)
 				.where('session_id', sessionId)
 				.sum('amount', { as: 'amount' })
 				.first()
+
+			return { summary: response }
 		},
 	)
 
