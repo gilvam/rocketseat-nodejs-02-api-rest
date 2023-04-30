@@ -14,7 +14,7 @@ module.exports = {
 		'prettier/prettier': [
 			'error',
 			{
-				printWidth: 120,
+				printWidth: 80,
 				tabWidth: 3,
 				useTabs: true,
 				singleQuote: true,
@@ -28,7 +28,11 @@ module.exports = {
 	},
 	settings: {
 		'import/parsers': {
-			[require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+			[require.resolve('@typescript-eslint/parser')]: [
+				'.ts',
+				'.tsx',
+				'.d.ts',
+			],
 		},
 	},
 }
