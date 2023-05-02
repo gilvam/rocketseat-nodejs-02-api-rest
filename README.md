@@ -6,15 +6,21 @@
 
 ---
 
-#### use:
+### use:
 
 * fastify https://www.fastify.io/
 * dotenv https://www.npmjs.com/package/dotenv
 * zod https://www.npmjs.com/package/zod
+* tsup: https://github.com/egoist/tsup
 
-#### database
-* knex https://knexjs.org/
-* sqlite3
+
+ * ###### database
+   * knex https://knexjs.org/
+   * sqlite3
+
+
+ * ###### deploy
+   * render https://render.com/
 
 ---
 
